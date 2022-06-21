@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste</title>
+    <meta charset="utf-8"/>
+   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="side-nav">
+    <div class="wrapper">
+      <div class="three-dots-container">
+        <div class="dot d1"></div>
+        <div class="dot d2"></div>
+        <div class="dot d3"></div>
+      </div>
+     
+      <div class="nav-bloc n-2">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="user-alt"
+          class="svg-inline--fa fa-user-alt fa-w-16"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z"
+          ></path>
+        </svg>
+        <div class="sub-nav">
+          <h3>gestion des comptes.</h3>
+          <ul>
+            <li onclick="location.href='listE.html'">
+              
+              <a >comptes étudiants</a>
+            </li>
+            <li onclick="location.href='listP.html'">
+              
+              <a >comptes professeurs</a>
+            </li>
+            <li onclick="location.href='listA.html'">
+              
+              <a >comptes Admin</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav-bloc n-3">
+
+
+          <img 
+          class="svg"
+          src="asset/right-correct.svg" />
+        <div class="sub-nav">
+          <h3>Approbation</h3>
+          <ul>
+            <li onclick="location.href='APF.html'">
+              <a >Approuver Forum</a>
+            </li>
+            <li onclick="location.href='apc.html'">
+              <a >Approuver comptes</a>
+            </li>
+           
+           
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav-bloc n-4">
+          <img 
+          class="svg"
+          src="asset/security-svgrepo-com.svg" />
+        <div class="sub-nav">
+          <h3>Securité.</h3>
+          <ul>
+              <p >--- Contrôle ---</p>
+            <li onclick="location.href='CBC.html'">
+              <a >Bannir Des comptes</a>
+            </li>
+            <li onclick="location.href='CBF.html'">
+              <a >Bannir Des Forum</a>
+            </li>
+            <li onclick="location.href='CBCT.html'">
+              <a >Bannir Du chat</a>
+            </li>
+            
+            <p >--- Surveillance ---</p>
+            <li onclick="location.href='SSC.html'">
+              <a >Surveiller Le Chat</a>
+            </li>
+            <li onclick="location.href='SU.html'">
+              <a >Surveiller Les Utilisateurs</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div title="Se Deconnecter" class="nav-bloc n-3">
+
+          
+          <img  class="svg" src="asset/disco.svg" class="logo-medias" onclick="logout()" />
+      
+      </div>
+
+      
+    </div>
+  </nav>
+
+
+
+      <div class="container">
+        <header>
+          <h3>liste Admin.</h3>
+        </header>
+        <div class="table-wrapper">
+          <table class="table-users">
+            <tr>
+              <th>pseudo</th>
+              <th>id</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+            <tbody id="emp_tb">
+
+            </tbody>
+          </table>
+          <button class="btn btn-add">Ajouter.</button>
+          
+        </div>
+        <div class="edit-modal modal-wrapper">
+          <div class="modal">
+            <div class="modal-header"><h3>Modifier Le Compte.</h3></div>
+            <div class="modal-body">
+              <form class="form" autocomplete="off">
+                <input type="email" id="emaill" name="email" placeholder="Email">
+                <input type="email" id="lastName" name="lastName" placeholder="pseudo">
+                <button class="btn btn-modal">Modifier</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Add Modal -->
+        <div class="add-modal modal-wrapper">
+          <div class="modal">
+            <div class="modal-header"><h3>Ajouter Un Compte Admin.</h3></div>
+            <div class="modal-body">
+              <form class="form" autocomplete="off">
+                <div id="form_content_container">
+                  <div id="form_content_inner_container">
+                    <input type="text" id="psdo" placeholder="Votre pseudo...">
+                      <input type="email" id="email" placeholder="Votre Email...">
+                      <input type="password" id="password" placeholder="Votre Mots De passe...">
+                     <button class="btn btn-modal">Ajouter</button>
+                        
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- Edit Modal -->
+       
+      </div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBQdunl8QKe6pkJ7_rBvTZ0MtR6F_k0hpw",
+    authDomain: "acedbase-66da9.firebaseapp.com",
+    databaseURL: "https://acedbase-66da9-default-rtdb.firebaseio.com",
+    projectId: "acedbase-66da9",
+    storageBucket: "acedbase-66da9.appspot.com",
+    messagingSenderId: "835006271122",
+    appId: "1:835006271122:web:d32034f34fa37cdceba04b",
+    measurementId: "G-XZKVFJTKWR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    const auth = firebase.auth()
+    const database = firebase.database()
+    const rif = firebase.database().ref('users');
+  </script>
+  <script src="js/listA.js"></script>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    color: white;
+    
+    background-image: url('https://i.pinimg.com/originals/95/8b/01/958b01ab6ec65745d6f56e99b6e14809.jpg');
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+input, button{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+}
+
+.loggedin-div input[type="text"]{
+    position: relative;
+    padding-left: 10px;
+    margin-left: 120px;
+}
+
+
+div{
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+.main-div, .loggedin-div{
+    display: none;
+}
+
+#profilepic{
+    display: block;
+    width: 150px;
+    height: 150px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+
+div h3{
+    text-align: center;
+    font-family:  'Oswald', sans-serif;
+}
+
+
+.signup_div input, .main-div input, .loggedin-div input{
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.main-div input:focus,  .loggedin-div input:focus{
+    border: 1px solid #999;
+}
+
+div button{
+    background-color: tomato;
+    color: white;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+div button:hover{
+    background-color: white;
+    color: tomato;
+    border: 1px solid white;
+}
+
+#signup{
+    background: slateblue;
+    color: snow;
+    border: 1px solid snow;
+}
+
+#signup:hover{
+    background: snow;
+    color: slateblue;
+    border: 1px solid slateblue;
+}

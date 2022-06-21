@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profil </title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="lressources/css/csspf.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    </head>
+<body>
+
+    <ul class="medias">
+        <li class="bulle"><img src="lressources/logo/maison.svg" class="logo-medias"onclick="location.href='Accueil.html'"></li>
+        <li class="bullee"><h3>-Accueil-</h3></li>
+        <li class="bulle"><img src="lressources/logo/profile-svgrepo-com.svg" class="logo-medias"onclick="location.href='Profil.html'"></li>
+        <li class="bullee"><h3>-Profil-</h3></li>
+        <li id="bulm" class="bulle"><img src="lressources/logo/email (2).svg" class="logo-medias"onclick="location.href='MSGR.html'"></li>
+        <li id="bulmm" class="bullee"><h3>-Messagerie-</h3></li>
+        <li id="bul1" class="bulle"><img src="lressources/logo/discussion.png" class="logo-medias"onclick="location.href='Forum.html'"></li>
+        <li id="bul11" class="bullee"><h3>-Forum-</h3></li>
+        <li id="bul2" class="bulle"><img src="lressources/logo/chat-svgrepo-com.svg" class="logo-medias"onclick="location.href='Chats.html'"></li>
+        <li id="bul22" class="bullee"><h3>-Chats-</h3></li>
+        <li class="bulle"><img src="lressources/logo/disco.svg" class="logo-medias" onclick="logout()" ></li>
+        <li class="bullee"><h3>-déconnexion-</h3></li>
+    </ul>
+    <div class="container">
+        <div class="carre">
+            <img class="img" src="info.jpg" alt="">
+            <div class="container">
+            <div class="circle">
+                <div id="clik5" class="clik">
+                    <div class="element">
+                        <img class="imgg" src="lressources/logo/etud.svg" alt="">
+                        <h1 class="titre">Cours</h1>
+                        <h3 class="inf">Publier vos cours !</h3>
+                        <button class="button" onclick="location.href='PCOURS.html'">Publier !</button>
+                    </div>
+                </div>
+                <div id="clik1" class="clik">
+                    <div class="element">
+                       <img class="imgg" src="lressources/logo/proff.svg" alt="">
+                    <h1 class="titre" >Professeur</h1>
+                    <h3 class="inf">Communiquez avec un enseignant !</h3>
+                    <button class="button" onclick="location.href='Listpr.html'">Contacter !</button>
+                    </div>
+                    
+                </div>
+                <div id="clik2" class="clik">
+                    <div class="element">
+                        <img class="imgg" src="lressources/logo/etud.svg" alt="">
+                        <h1 class="titre">Cours</h1>
+                        <h3 class="inf">Suivez vos cours !</h3>
+                        <button class="button" onclick="location.href='PCOURS.html'">Suivre !</button>
+                    </div>
+                   
+                </div>
+                
+                <div id="clik4" class="clik">
+                    <div class="element">
+                        <img class="imgg" src="lressources/logo/email (2).svg" alt="">
+                    <h1 class="titre">Messagerie</h1>
+                    <h3 class="inf">Consultez votre Messagerie !</h3>
+                    <button class="button">Boîte Messagerie !</button>
+                    </div>
+                   
+                </div>
+                <div id="clik6" class="clik">
+                    <div class="element">
+                       <img class="imgg" src="lressources/logo/student-svgrepo-com.svg" alt="">
+                    <h1 class="titre" >Étudiant.</h1>
+                    <h3 class="inf">Voir la liste des étudiant !</h3>
+                    <button class="button" onclick="location.href='ListEt.html'">Contacter !</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+            
+            
+        </div>
+    </div>
+    
+   
+    <div id="cercle" class="container-corner">
+        <div class="circle-menu">
+            <a href="#" class="links-circle" onclick="location.href='Listpr.html'">
+                <img src="lressources/logo/proff.svg">
+        
+            </a>
+            
+            <a onclick="location.href='PCOURS.html'" href="#" class="links-circle">
+                <img src="lressources/logo/etud.svg">
+                
+            </a>
+            <a href="#" class="links-circle">
+                <img src="lressources/logo/email (2).svg">
+            </a>
+            
+        </div>
+        <div class="btn-circle">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+  
+  <!-- Our script must be loaded after firebase references -->
+  <script src="lressources/js/init.js"></script>
+<script src="lressources/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profil </title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="lressources/css/PCOURS.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    </head>
+<body>
+
+    <ul class="medias">
+        <li class="bulle"><img src="lressources/logo/maison.svg" class="logo-medias"onclick="location.href='Accueil.html'"></li>
+        <li class="bullee"><h3>-Accueil-</h3></li>
+       
+    </ul>
+    <div id="btnpr" class="update">
+
+      <button id="addF" class="addf">Publier Un Cours !</button>
+      <button id="addC" class="addC">Mes Cours !</button>
+      <button id="addT" class="addT">Tous Les Cours !</button>
+  </div>
+    <div id="scroll-bg" class="scroll-bg">  
+      <div class="scroll-div">  
+     <div class="scroll-object">  
+      <div class="table-wrapper">
+        <table class="table-users">
+          <div id="cards" class="cards-grid">
+            <div class="card">
+              <div class="top-img skeleton-anim"></div>
+              <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="top-img skeleton-anim"></div>
+              <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="top-img skeleton-anim"></div>
+              <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+              </div>
+            </div>
+           
+          </div>
+          <tbody id="emp_tb">
+
+          </tbody>
+        </table>
+        
+      </div>
+     
+    </div>
+    
+    </div>
+    </div>
+    <div id="scrolll-bg" class="scrolll-bg">  
+      <div class="scrolll-div">  
+     <div class="scrolll-object">  
+      <div class="tablee-wrapper">
+        <table class="tablee-users">
+          <div id="cardss" class="cards-grid">
+            <div class="card">
+              <div class="top-img skeleton-anim"></div>
+              <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="top-img skeleton-anim"></div>
+              <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="top-img skeleton-anim"></div>
+              <div class="content">
+                <h3 class="skeleton-title skeleton-anim"></h3>
+                <p class="skeleton-text skeleton-anim"></p>
+                <p class="skeleton-text skeleton-anim"></p>
+              </div>
+            </div>
+           
+          </div>
+          <tbody id="emp_tb">
+
+          </tbody>
+        </table>
+        
+      </div>
+     
+    </div>
+    
+    </div>
+    </div>
+
+    <div id="modal" class="add-modal modal-wrapper">
+      <div class="modal">
+        <div class="modal-header"><h3>Publier Un Cours !</h3></div>
+        <div class="modal-body">
+          <form class="form">
+            <div id="form_content_container">
+              <div id="form_content_inner_container">
+                <input  class="in1" type="text" id="titrefr" placeholder="Le Titre Pour le cours...">
+                <input  class="in1" type="text" id="titrmdl" placeholder="Nom Du Modul...">
+                <form>
+                  <textarea id="discri" placeholder="Ecrivez Le Texte De Votre Cours Ici..."></textarea>
+                </form>
+                <select class="selected" id="list" onchange="getSelectValue();">
+
+                  <option>-sélectionnez votre Grade.</option>
+                  <option value="Licence">Licence</option>
+                  <option value="Master">Master</option>
+                  
+                  
+              </select>
+              <select class="selected" id="listlic" onchange="getSelectValueLC();">
+  
+                  <option>-sélectionnez votre Spécialité.</option>
+                  <option disabled><h2>----Acad----</h2> </option>
+                  <option value="Acad A L2">Acad A L2</option>
+                  <option value="Acad A L3">Acad A L3</option>
+                  <option value="Acad B L2">Acad B L2</option>
+                  <option value="Acad B L3">Acad B L3</option>
+                  <option value="Acad C L2">Acad C L2</option>
+                  <option value="Acad C L3">Acad C L3</option>
+                  <option disabled> <h2>----Isil----</h2> </option>
+                  <option value="Isil A L2">Isil A L2</option>
+                  <option value="Isil A L3">Isil A L3</option>
+                  <option value="Isil B L2">Isil B L2</option>
+                  <option value="Isil B L3">Isil B L3</option>
+                  <option disabled> <h2>----GTR----</h2> </option>
+                  <option value="GTR L2">GTR L2</option>
+                  <option value="GTR L3">GTR L3</option>
+                  
+                  
+              </select>
+              <select class="selected" id="listmstr" onchange="getSelectValueMS();">
+                  <option>-sélectionnez votre Spécialité.</option>
+                  <option value="MIND M1">MIND M1</option>
+                  <option value="MIND M2">MIND M2</option>
+                  <option value="BIO M1">BIO M1</option>
+                  <option value="BIO M2">BIO M2</option>
+                  <option value="IL M1">IL M1</option>
+                  <option value="IL M2">IL M2</option>
+                  <option value="RSD M1">RSD M1</option>
+                  <option value="RSD M2">RSD M2</option>
+                  <option value="MIV M1">MIV M1</option>
+                  <option value="MIV M2">MIV M2</option>
+                  <option value="SII M1">SII M1</option>
+                  <option value="SII M2">SII M2</option>
+                  <option value="SSI M1">SSI M1</option>
+                  <option value="SSI M2">SSI M2</option>
+                  
+                  
+              </select> 
+<div class="btn-group">
+  <button id="upload" type="button" class="button">Publier</button>
+  <button id="exit" type="button" class="button">Annulé</button>
+</div>
+                
+                    
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+<script src="lressources/js/PCOURS.js"></script>
+</body>
+</html>

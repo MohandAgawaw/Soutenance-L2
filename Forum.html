@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forum</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="lressources/css/forum.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        
+    </head>
+<body>
+   
+    <ul class="medias">
+        <li class="bulle"><img src="lressources/logo/maison.svg" class="logo-medias"onclick="location.href='Accueil.html'"></li>
+        <li class="bullee"><h3>-Accueil-</h3></li>
+       
+    </ul>
+
+    <div class="update">
+
+        <button id="addF" class="addf"> Cree Un Forum !</button>
+    </div>
+    <div class="scroll-bg">  
+      <div class="scroll-div">  
+     <div class="scroll-object">  
+      <div class="table-wrapper">
+        <table class="table-users">
+          <tr>
+            <th>Image</th>
+            <th>Titre</th>
+            <th>Theme</th>
+            <th>Auteurs</th>
+            <th>Action</th>
+          </tr>
+          <tbody id="emp_tb">
+
+          </tbody>
+        </table>
+        
+      </div>
+     
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    
+    <div id="modal" class="add-modal modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>Cree Un Forum.</h3></div>
+          <div class="modal-body">
+            <form class="form">
+              <div id="form_content_container">
+                <div id="form_content_inner_container">
+                  <input  class="in1" type="text" id="titrefr" placeholder="Le Titre Du Forum...">
+                  <form>
+                    <textarea id="discri" placeholder="Ecrivez Le Texte De Votre Forum Ici..."></textarea>
+                  </form>
+                  <form class="well">
+                    <fieldset>
+                      <legend>Choisissez Le Theme Du Forum.</legend>
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                      <input type="radio" name="rdoName" value="Dev Mobile"/> Dev Mobile 
+                      <input type="radio" name="rdoName" value="Dev Web"/> Dev Web<br>
+                      <input type="radio" name="rdoName" value="Administrateur BD"/> Administrateur BD <br>
+                      <input type="radio" name="rdoName" value="Analyste SOC"/> Analyste SOC
+                      <input type="radio" name="rdoName" value="Architecte Big Data"/> Architecte Big Data
+                      <input type="radio" name="rdoName" value="Community manager"/> Community manager
+                      <br/>
+                    <span id="result"></span>
+                      
+                    </fieldset>  
+                </form>    
+<div class="btn-group">
+    <button id="upload" type="button" class="button">Cree</button>
+    <button id="exit" type="button" class="button">Annulé</button>
+  </div>
+                  
+                      
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="lressources/js/forum.js"></script>
+
+</body>
+</html>

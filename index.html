@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+      <head>
+	  <title> Formulaire </title>
+	     <meta charset="utf-8"/>
+		 <link rel="stylesheet" href="ressources/css/cess.css"/>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+      </head> 
+	  
+	  <body >
+    
+		     <nav class="navbar">
+			      <p class="logo">Mohand Vous Presente <span class="logoo"></span></p>
+             </nav>
+             <div id="content_container">
+            <div id="form_container">
+               
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                       
+                        <input type="email" id="email" placeholder="Votre Email..">
+                        <input type="password" id="password" placeholder="Votre Mot de passe">
+                        <div id="button_container">
+                        <button onclick="login()">Login</button>
+                            <button onclick="location.href='inscription.php'">Register</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+
+	 </body>
+  
+  
+   
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+         <script>
+             var typed = new Typed('.logoo', {
+              strings: ['USTHB / Faculté dInformatique.','USTHB / Faculté dInformatique.'],
+              typeSpeed: 100,
+              backSpeed:100,
+              loop: true
+              
+            
+            });
+              
+         </script>
+        
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+<!-- Our script must be loaded after firebase references -->
+<script src="ressources/js/index.js"></script>
+</html>
